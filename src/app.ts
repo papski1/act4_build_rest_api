@@ -4,6 +4,7 @@ import cors from "cors"
 import helmet from "helmet"
 
 import { userRouter } from "./users/users.routes"
+import { productRouter } from "./products/product.routes"
 
 dotenv.config()
 
@@ -21,6 +22,7 @@ app.use(cors())
 app.use(helmet())
 
 app.use("/", userRouter)
+app.use("/", productRouter)
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)

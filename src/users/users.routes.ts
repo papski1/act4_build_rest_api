@@ -18,9 +18,9 @@ userRouter.get('/users', async (req : Request, res : Response) => {
 
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({error})
     }
-})
+});
 
-userRouter.get("/users/:id", async (req: Request, res: Response) => {
+userRouter.get("/user/:id", async (req: Request, res: Response) => {
     try {
         const user : UnitUser = await database.findOne(req.params.id)
 
@@ -32,13 +32,13 @@ userRouter.get("/users/:id", async (req: Request, res: Response) => {
     }catch (err) {
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({err})
     }
-})
+});
 
 userRouter.post("/register", async (req:Request, res: Response) => {
     try{
         const {username, email, password } = req.body
 
-        if (!email || !password || !username ){
+        if (!username || !email|| !password ){
             return res.status(StatusCodes.BAD_REQUEST).json({error: `Please provide all the required parameters...`})
         }
 
@@ -54,7 +54,7 @@ userRouter.post("/register", async (req:Request, res: Response) => {
     }catch (err) {
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({err})
     }
-})
+});
 
 userRouter.post("/login", async (req:Request, res: Response) => {
     try{
@@ -80,7 +80,7 @@ userRouter.post("/login", async (req:Request, res: Response) => {
     }catch(err) {
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({err})
     }
-})
+});
 
 userRouter.put("/user/:id", async (req:Request, res:Response) => {
     try{
@@ -102,7 +102,7 @@ userRouter.put("/user/:id", async (req:Request, res:Response) => {
         console.log(err)
         return res.status(500).json({err})
     }
-})
+});
 
 userRouter.delete("/user/:id", async(req:Request, res:Response) => {
     try{
@@ -120,4 +120,4 @@ userRouter.delete("/user/:id", async(req:Request, res:Response) => {
     }catch(err){
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(err)
     }
-})
+});
