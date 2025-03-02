@@ -1,1 +1,9 @@
-{}
+{
+    "0dd88bbd-eadf-4608-bd0d-3f89597c8a69": {
+        "id": "0dd88bbd-eadf-4608-bd0d-3f89597c8a69",
+        "name": "RELOX",
+        "price": 15000,
+        "quantity": 15,
+        "image": "ohaha.png"
+    }
+}

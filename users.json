@@ -1,1 +1,14 @@
-{}
+{
+    "16d062bd-c166-4b05-a744-1f38f62acb5c": {
+        "id": "16d062bd-c166-4b05-a744-1f38f62acb5c",
+        "username": "papskikoy",
+        "email": "kikoypaps1@gmail.com",
+        "password": "$2b$10$j5Qkc7ARUHMsjNjJ..L0nOgqOpF0BZn2Wxs8gL7ErA2y7XkSxh2zq"
+    },
+    "640c8fa4-16b9-4509-b461-0829bcd61058": {
+        "id": "640c8fa4-16b9-4509-b461-0829bcd61058",
+        "username": "papsleroi",
+        "email": "papsleroi1@gmail.com",
+        "password": "$2b$10$YucGGiKRr6oQuXp4PZDPkODBFRgPBv12FV9lQxmzbSApsBcZdgfXe"
+    }
+}
