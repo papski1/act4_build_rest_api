@@ -1,6 +1,6 @@
-import { Product, Products, UnitProduct } from "./product.interface"
-import { v4 as random } from "uuid"
-import fs from "fs"
+import { Product, Products, UnitProduct } from "./product.interface";
+import { v4 as random } from "uuid";
+import fs from "fs";
 
 let products : Products = loadProducts ();
 

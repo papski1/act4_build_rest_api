@@ -5,7 +5,7 @@ export interface User{
 }
 
 export interface UnitUser extends User {
-    id: string
+    id: string;
 }
 
 export interface Users {
